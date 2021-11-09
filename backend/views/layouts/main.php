@@ -32,7 +32,7 @@ AppAsset::register($this);
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="http://localhost/klaser/backend/web/index.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -44,7 +44,7 @@ AppAsset::register($this);
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="http://localhost/klaser/backend/web/index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -66,6 +66,13 @@ AppAsset::register($this);
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Encomendas</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/klaser/backend/web/index.php/user/index">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Users</span></a>
             </li>
 
             <!-- Divider -->
@@ -260,7 +267,7 @@ AppAsset::register($this);
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-                                    <?php echo Yii::$app->user->identity->username?>
+<!--                                    --><?php //echo Yii::$app->user->identity->username?>
                                 </span>
                                 <img class="img-profile rounded-circle"
                                      src="img/undraw_profile.svg">

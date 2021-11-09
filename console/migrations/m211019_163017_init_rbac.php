@@ -29,9 +29,13 @@ class m211019_163017_init_rbac extends Migration
         $auth->add($admin);
         $auth->addChild($admin, $cliente);
 
+        $updateUser = $auth->createPermission('updateUser');
+        $updateUser->description = 'Update User';
+        $auth->add($updateUser);
+
 
         $auth->assign($admin, 1);
-        $auth->assign($cliente, 3);
+
     }
 
     public function down()
